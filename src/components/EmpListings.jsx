@@ -1,4 +1,15 @@
+import { useEffect,useState } from "react";
 const EmpListings =()=>{
+    const[ empdata, empdatachange] = useState(null)
+    useEffect(()=>{
+        fetch("http://localhost:8000/employees").then((res)=>{
+            return res.json()
+        }).then((resp)=>{
+            empdatachange(resp)
+        }).catch((err)=>{
+            console.log(err.message)
+        })
+    },[])
 
     return(
         <div className="container">
@@ -21,7 +32,21 @@ const EmpListings =()=>{
 
                         </thead>
                         <tbody>
-                            
+                                {empdata &&
+                                    empdata.map(item =>(
+                                        <tr key={item.id}>
+                                            <td>{item.id}</td>
+                                            <td>{item.name}</td>
+                                            <td>{item.email}</td>
+                                            <td>{item.phone}</td>
+                                            <td>
+                                            <a className="btn btn-success">Edit</a>
+                                            <a className="btn btn-danger">Remove</a>
+                                            <a className="btn btn-success">Detail</a>
+                                            </td>
+                                        </tr>
+                                    ))
+                                }
                         </tbody>
 
                     </table>
