@@ -4,8 +4,21 @@
       "id": 1,
       "name": "gideon",
       "email": "clottey@gmail.com",
-      "phone":"0249725399"
+      "phone": "0249725399"
+    },
+    {
+      "name": "gideon",
+      "email": "gideonclottey@gmail.com",
+      "phone": "249725399",
+      "active": true,
+      "id": 2
+    },
+    {
+      "name": "seth",
+      "email": "seth@gmail.com",
+      "phone": "249725399",
+      "active": true,
+      "id": 3
     }
   ]
-  
 }
