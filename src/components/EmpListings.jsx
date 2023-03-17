@@ -1,4 +1,5 @@
 import { useEffect,useState } from "react";
+import { Link } from 'react-router-dom';
 const EmpListings =()=>{
     const[ empdata, empdatachange] = useState(null)
     useEffect(()=>{
@@ -20,6 +21,9 @@ const EmpListings =()=>{
                     </h2>
                 </div>
                 <div className="card-body">
+                    <div className="text-left">
+                        <Link to="/employee/create" className="btn btn-success">Add New (+)</Link>
+                    </div>
                     <table className="table table-bordered">
                         <thead className="bg-dark text-white">
                             <tr>
@@ -40,8 +44,8 @@ const EmpListings =()=>{
                                             <td>{item.email}</td>
                                             <td>{item.phone}</td>
                                             <td>
-                                            <a className="btn btn-success">Edit</a>
-                                            <a className="btn btn-danger">Remove</a>
+                                            <a className="btn btn-success me-1">Edit</a>
+                                            <a className="btn btn-danger me-1">Remove</a>
                                             <a className="btn btn-success">Detail</a>
                                             </td>
                                         </tr>
