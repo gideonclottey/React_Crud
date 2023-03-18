@@ -13,7 +13,20 @@ const loadEdit=(id)=>{
 }
 
 const removeItem=(id)=>{
+    if(window.confirm('Do you want to remove?')){
+        fetch('http://localhost:8000/employees/'+id,{
+        // since this is a post request we need to perform this
+        method:"DELETE"
 
+    }).then((res)=>{
+        alert('Employee Removed successfully')
+        window.location.reload()
+
+    }).catch((err)=>{
+        console.log(err.message)
+    })
+
+    }
 }
     useEffect(()=>{
         fetch("http://localhost:8000/employees").then((res)=>{

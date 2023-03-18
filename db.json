@@ -1,24 +1,10 @@
 {
   "employees": [
     {
-      "id": 1,
-      "name": "gideon",
+      "name": "gideon tat",
       "email": "clottey@gmail.com",
-      "phone": "0249725399"
-    },
-    {
-      "name": "gideon",
-      "email": "gideonclottey@gmail.com",
-      "phone": "249725399",
-      "active": true,
-      "id": 2
-    },
-    {
-      "name": "seth",
-      "email": "seth@gmail.com",
-      "phone": "249725399",
-      "active": true,
-      "id": 3
+      "phone": "0249725399",
+      "id": 1
     }
   ]
 }
