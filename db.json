@@ -5,6 +5,27 @@
       "email": "clottey@gmail.com",
       "phone": "0249725399",
       "id": 1
+    },
+    {
+      "name": "seth",
+      "email": "seth@gmail.com",
+      "phone": "249725399",
+      "active": true,
+      "id": 2
+    },
+    {
+      "name": "gideon",
+      "email": "gideonclottey@gmail.com",
+      "phone": "249725399",
+      "active": true,
+      "id": 3
+    },
+    {
+      "name": "uihh",
+      "email": "26493589@students.lincoln.ac.uk",
+      "phone": "iuhh",
+      "active": true,
+      "id": 4
     }
   ]
 }
